@@ -4,7 +4,7 @@
 export type * from '../lib/types'
 
 // Basic form components
-export { Button } from './Button'
+export { Button, type ButtonProps } from './Button'
 export { Input } from './Input'
 export { Textarea } from './Textarea'
 export { Checkbox } from './Checkbox'

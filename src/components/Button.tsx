@@ -5,7 +5,7 @@ import type { ButtonHTMLAttributes, ElementRef, ReactNode } from 'react'
 import { cn } from '../lib/utils'
 import type { ButtonVariant, ButtonSize } from '../lib/types'
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant
   size?: ButtonSize
   loading?: boolean
