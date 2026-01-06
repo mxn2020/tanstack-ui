@@ -162,7 +162,7 @@ interface TooltipContextValue {
   open: boolean
   setOpen: (open: boolean) => void
   delay: number
-  timerRef: React.MutableRefObject<number | null>
+  timerRef: React.MutableRefObject<ReturnType<typeof setTimeout> | null>
 }
 
 const TooltipContext = createContext<TooltipContextValue | null>(null)

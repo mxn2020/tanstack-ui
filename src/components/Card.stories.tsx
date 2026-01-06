@@ -30,6 +30,9 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
+  args: {
+    children: null,
+  },
   render: () => (
     <Card className='w-[350px]'>
       <CardHeader>
@@ -62,6 +65,9 @@ export const WithHover: Story = {
 }
 
 export const Clickable: Story = {
+  args: {
+    children: null,
+  },
   render: () => (
     <Card padding='md' onClick={() => alert('Card clicked!')}>
       <p>Click this card to trigger an action</p>
@@ -70,6 +76,9 @@ export const Clickable: Story = {
 }
 
 export const NoPadding: Story = {
+  args: {
+    children: null,
+  },
   render: () => (
     <Card padding='none' className='w-[350px]'>
       <div className='h-48 bg-gradient-to-br from-blue-500 to-purple-600' />
@@ -93,6 +102,9 @@ export const LargeShadow: Story = {
 }
 
 export const Grid: Story = {
+  args: {
+    children: null,
+  },
   render: () => (
     <div className='grid grid-cols-3 gap-4'>
       {[1, 2, 3, 4, 5, 6].map((i) => (
