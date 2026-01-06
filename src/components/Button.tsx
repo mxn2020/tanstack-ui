@@ -21,6 +21,8 @@ interface ChildElementProps extends Record<string, unknown> {
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
+  default:
+    'bg-[color:var(--primary)] text-primary-foreground border-transparent hover:opacity-90 focus-visible:ring-[color:var(--ring)]',
   primary:
     'bg-[color:var(--primary)] text-primary-foreground border-transparent hover:opacity-90 focus-visible:ring-[color:var(--ring)]',
   secondary:
@@ -39,6 +41,8 @@ const variantClasses: Record<ButtonVariant, string> = {
     'bg-transparent text-foreground border-transparent hover:bg-surface focus-visible:ring-[color:var(--ring)]',
   outline:
     'bg-transparent text-foreground border-border hover:bg-surface focus-visible:ring-[color:var(--ring)]',
+  link:
+    'bg-transparent text-[color:var(--primary)] border-transparent hover:underline focus-visible:ring-[color:var(--ring)] underline-offset-4',
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -47,6 +51,7 @@ const sizeClasses: Record<ButtonSize, string> = {
   md: 'px-4 py-2 text-sm',
   lg: 'px-6 py-3 text-base',
   icon: 'p-2 h-9 w-9',
+  default: 'px-4 py-2 text-sm',
 }
 
 const LoadingSpinner = memo(() => (

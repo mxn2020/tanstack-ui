@@ -13,6 +13,8 @@ interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
 }
 
 const variantClasses: Record<BadgeVariant, string> = {
+  default:
+    'bg-[color-mix(in_oklab,var(--primary)_18%,transparent)] text-[color:var(--primary)] border-[color-mix(in_oklab,var(--primary)_35%,transparent)]',
   primary:
     'bg-[color-mix(in_oklab,var(--primary)_18%,transparent)] text-[color:var(--primary)] border-[color-mix(in_oklab,var(--primary)_35%,transparent)]',
   secondary: 'bg-surface text-foreground border-border',
