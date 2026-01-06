@@ -80,7 +80,7 @@ const LegacyTooltip = memo(forwardRef<ElementRef<'div'>, LegacyTooltipProps>(
     ...props
   }, ref) => {
     const [isVisible, setIsVisible] = useState(false)
-    const timeoutRef = useRef<number | null>(null)
+    const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
     const showTooltip = useCallback(() => {
       if (disabled) return
@@ -173,7 +173,7 @@ export function TooltipProvider({ children }: TooltipProviderProps) {
 
 const TooltipRoot = memo(function TooltipRoot({ delay = 150, children }: TooltipRootProps) {
   const [open, setOpen] = useState(false)
-  const timerRef = useRef<number | null>(null)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   return (
     <TooltipContext.Provider value={{ open, setOpen, delay, timerRef }}>
       <div className='relative inline-block'>{children}</div>
