@@ -26,20 +26,24 @@
       "import": "./src/react/lib/*.ts"
     },
     "./solid": {
+      "solid": "./src/solid/index.ts",
       "types": "./dist/solid/solid/index.d.ts",
-      "import": "./src/solid/index.ts"
+      "default": "./src/solid/index.ts"
     },
     "./solid/components/*": {
+      "solid": "./src/solid/components/*.tsx",
       "types": "./dist/solid/solid/components/*.d.ts",
-      "import": "./src/solid/components/*.tsx"
+      "default": "./src/solid/components/*.tsx"
     },
     "./solid/hooks/*": {
+      "solid": "./src/solid/hooks/*.ts",
       "types": "./dist/solid/solid/hooks/*.d.ts",
-      "import": "./src/solid/hooks/*.ts"
+      "default": "./src/solid/hooks/*.ts"
     },
     "./solid/lib/*": {
+      "solid": "./src/solid/lib/*.ts",
       "types": "./dist/solid/solid/lib/*.d.ts",
-      "import": "./src/solid/lib/*.ts"
+      "default": "./src/solid/lib/*.ts"
     },
     "./shared": {
       "types": "./dist/react/shared/index.d.ts",
