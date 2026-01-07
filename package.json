@@ -5,6 +5,10 @@
   "type": "module",
   "description": "Shared UI component library",
   "exports": {
+    ".": {
+      "types": "./dist/react/react/index.d.ts",
+      "import": "./src/react/index.ts"
+    },
     "./react": {
       "types": "./dist/react/react/index.d.ts",
       "import": "./src/react/index.ts"
