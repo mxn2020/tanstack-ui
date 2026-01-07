@@ -1,9 +1,9 @@
-// packages/ui/src/components/Input.tsx
+// packages/ui/src/react/components/Input.tsx
 
 import { forwardRef, useId, memo, useCallback } from 'react'
 import type { InputHTMLAttributes, ElementRef, ReactNode } from 'react'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
-import type { InputSize, FormComponentProps } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/types'
+import { cn } from '../lib/utils'
+import type { InputSize, FormComponentProps } from '../lib/types'
 
 interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'>, FormComponentProps {
   label?: string

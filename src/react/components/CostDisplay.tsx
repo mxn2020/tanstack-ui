@@ -1,4 +1,4 @@
-// packages/ui/src/components/CostDisplay.tsx
+// packages/ui/src/react/components/CostDisplay.tsx
 
 import { useState } from 'react';
 import { ToggleLeft, ToggleRight } from 'lucide-react';

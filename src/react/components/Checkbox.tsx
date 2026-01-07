@@ -1,10 +1,10 @@
-// packages/ui/src/components/Checkbox.tsx
+// packages/ui/src/react/components/Checkbox.tsx
 
 import { forwardRef, useId, useCallback, memo } from 'react'
 import type { InputHTMLAttributes, ElementRef } from 'react'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
+import { cn } from '../lib/utils'
 import { Check } from 'lucide-react'
-import type { FormComponentProps } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/types'
+import type { FormComponentProps } from '../lib/types'
 
 interface CheckboxProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange' | 'type'>, FormComponentProps {
   label?: string

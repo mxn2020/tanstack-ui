@@ -1,4 +1,4 @@
-// packages/ui/src/components/DatePicker.tsx
+// packages/ui/src/react/components/DatePicker.tsx
 /**
  * DatePicker Component
  *
@@ -40,11 +40,11 @@
  */
 import { forwardRef, useId, memo, useState, useCallback, useMemo } from 'react'
 import type { ElementRef } from 'react'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
+import { cn } from '../lib/utils'
 import { Calendar as CalendarIcon, X } from 'lucide-react'
-import { Calendar } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Calendar'
-import { Popover, PopoverTrigger, PopoverContent } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Popover'
-import type { InputSize, FormComponentProps } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/types'
+import { Calendar } from './Calendar'
+import { Popover, PopoverTrigger, PopoverContent } from './Popover'
+import type { InputSize, FormComponentProps } from '../lib/types'
 
 // Date formatting utilities
 const formatDate = (date: Date): string => {

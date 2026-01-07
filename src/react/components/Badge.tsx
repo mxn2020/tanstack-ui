@@ -1,9 +1,9 @@
-// packages/ui/src/components/Badge.tsx
+// packages/ui/src/react/components/Badge.tsx
 
 import { forwardRef, memo } from 'react'
 import type { HTMLAttributes, ElementRef, ReactNode } from 'react'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
-import type { BadgeVariant, BadgeSize, PriorityLevel} from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/types'
+import { cn } from '../lib/utils'
+import type { BadgeVariant, BadgeSize, PriorityLevel} from '../lib/types'
 
 interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
   children: ReactNode

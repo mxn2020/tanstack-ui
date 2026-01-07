@@ -1,7 +1,9 @@
+// packages/ui/src/solid/lib/utils.ts
+
 /**
- * Utility Functions (Solid)
+ * Utility Functions
  *
- * Helper functions for Solid component library.
+ * Helper functions for component library.
  */
 
 import { type ClassValue, clsx } from 'clsx'
@@ -13,3 +15,4 @@ import { twMerge } from 'tailwind-merge'
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
+

@@ -5,10 +5,13 @@
  */
 
 // Basic components
-export { Button, type ButtonProps, type ButtonVariant, type ButtonSize } from './Button'
-export { Input, type InputProps } from './Input'
-export { Label, type LabelProps } from './Label'
-export { Checkbox, type CheckboxProps } from './Checkbox'
+export { Button, type ButtonProps } from './Button'
+export { Input } from './Input'
+export { Label } from './Label'
+export { Checkbox } from './Checkbox'
+
+// Types
+export type { ButtonVariant, ButtonSize } from '../lib/types'
 
 // Layout components
 export {
@@ -17,8 +20,7 @@ export {
   CardTitle,
   CardDescription,
   CardContent,
-  CardFooter,
-  type CardProps
+  CardFooter
 } from './Card'
 
 // TODO: Port remaining components from React

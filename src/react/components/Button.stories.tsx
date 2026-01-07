@@ -1,4 +1,4 @@
-// packages/ui/src/components/Button.stories.tsx
+// packages/ui/src/react/components/Button.stories.tsx
 
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button } from './Button'

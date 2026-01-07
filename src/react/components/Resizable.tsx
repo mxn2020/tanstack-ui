@@ -1,4 +1,4 @@
-// packages/ui/src/components/Resizable.tsx
+// packages/ui/src/react/components/Resizable.tsx
 import {
   createContext,
   useContext,

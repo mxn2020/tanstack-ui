@@ -1,4 +1,4 @@
-// packages/ui/src/components/Breadcrumb.tsx
+// packages/ui/src/react/components/Breadcrumb.tsx
 
 import { Fragment } from 'react'
 import type { FC, ReactNode, ComponentType } from 'react'

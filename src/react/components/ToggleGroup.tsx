@@ -1,7 +1,7 @@
-// packages/ui/src/components/ToggleGroup.tsx
+// packages/ui/src/react/components/ToggleGroup.tsx
 
 import { createContext, useContext, forwardRef, memo, ReactNode, useCallback } from 'react';
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils';
+import { cn } from '../lib/utils';
 
 // Context for managing toggle group state
 interface ToggleGroupContextValue {

@@ -1,9 +1,9 @@
-// packages/ui/src/components/Textarea.tsx
+// packages/ui/src/react/components/Textarea.tsx
 
 import { forwardRef, useId, memo, useCallback } from 'react'
 import type { TextareaHTMLAttributes, ElementRef } from 'react'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
-import type { FormComponentProps } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/types'
+import { cn } from '../lib/utils'
+import type { FormComponentProps } from '../lib/types'
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement>, FormComponentProps {
   label?: string

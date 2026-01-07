@@ -2,7 +2,7 @@
 
 import { Link } from '@tanstack/react-router'
 import type { ComponentProps, ReactNode } from 'react'
-import { Button } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Button'
+import { Button } from '../components/Button'
 
 type RouterLinkProps = ComponentProps<typeof Link>
 type ButtonProps = ComponentProps<typeof Button>

@@ -1,7 +1,7 @@
-// packages/ui/src/components/Calendar.tsx
+// packages/ui/src/react/components/Calendar.tsx
 
 import { useState, useCallback, forwardRef, useEffect, useRef, memo } from 'react'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
+import { cn } from '../lib/utils'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const getDaysInMonth = (date: Date): number => new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate()

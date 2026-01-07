@@ -1,4 +1,4 @@
-// packages/ui/src/components/EmptyState.tsx
+// packages/ui/src/react/components/EmptyState.tsx
 
 import { FC, ReactNode } from 'react'
 import {
@@ -16,8 +16,8 @@ import {
   CheckCircle2,
   LucideIcon,
 } from 'lucide-react'
-import { Button } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Button'
-import { Card, CardContent } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Card'
+import { Button } from './Button'
+import { Card, CardContent } from './Card'
 
 export type EmptyStateVariant =
   | 'default'

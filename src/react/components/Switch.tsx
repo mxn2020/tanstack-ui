@@ -1,9 +1,9 @@
-// packages/ui/src/components/Switch.tsx
+// packages/ui/src/react/components/Switch.tsx
 
 import { forwardRef, useId, useCallback, memo } from 'react'
 import type { InputHTMLAttributes, ElementRef } from 'react'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
-import type { FormComponentProps } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/types'
+import { cn } from '../lib/utils'
+import type { FormComponentProps } from '../lib/types'
 
 interface SwitchProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange' | 'type' | 'size'>, FormComponentProps {
   label?: string

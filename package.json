@@ -4,23 +4,53 @@
   "private": false,
   "type": "module",
   "description": "Shared UI component library",
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
   "exports": {
-    ".": "./src/index.ts",
-    "./react": "./src/react/index.ts",
-    "./react/components/*": "./src/react/components/*.tsx",
-    "./react/hooks/*": "./src/react/hooks/*.ts",
-    "./react/lib/*": "./src/react/lib/*.ts",
-    "./solid": "./src/solid/index.ts",
-    "./solid/components/*": "./src/solid/components/*.tsx",
-    "./solid/hooks/*": "./src/solid/hooks/*.ts",
-    "./solid/lib/*": "./src/solid/lib/*.ts",
-    "./shared": "./src/shared/index.ts"
+    "./react": {
+      "types": "./dist/react/react/index.d.ts",
+      "import": "./src/react/index.ts"
+    },
+    "./react/components/*": {
+      "types": "./dist/react/react/components/*.d.ts",
+      "import": "./src/react/components/*.tsx"
+    },
+    "./react/hooks/*": {
+      "types": "./dist/react/react/hooks/*.d.ts",
+      "import": "./src/react/hooks/*.ts"
+    },
+    "./react/lib/*": {
+      "types": "./dist/react/react/lib/*.d.ts",
+      "import": "./src/react/lib/*.ts"
+    },
+    "./solid": {
+      "types": "./dist/solid/solid/index.d.ts",
+      "import": "./src/solid/index.ts"
+    },
+    "./solid/components/*": {
+      "types": "./dist/solid/solid/components/*.d.ts",
+      "import": "./src/solid/components/*.tsx"
+    },
+    "./solid/hooks/*": {
+      "types": "./dist/solid/solid/hooks/*.d.ts",
+      "import": "./src/solid/hooks/*.ts"
+    },
+    "./solid/lib/*": {
+      "types": "./dist/solid/solid/lib/*.d.ts",
+      "import": "./src/solid/lib/*.ts"
+    },
+    "./shared": {
+      "types": "./dist/react/shared/index.d.ts",
+      "import": "./src/shared/index.ts"
+    }
   },
   "scripts": {
+    "build": "pnpm build:types",
+    "build:types": "pnpm build:types:react && pnpm build:types:solid",
+    "build:types:react": "tsc -p tsconfig.react.json",
+    "build:types:solid": "tsc -p tsconfig.solid.json",
     "lint": "eslint .",
-    "type-check": "tsc --noEmit",
+    "type-check": "pnpm type-check:react && pnpm type-check:solid",
+    "type-check:react": "tsc -p tsconfig.react.json --noEmit",
+    "type-check:solid": "tsc -p tsconfig.solid.json --noEmit",
     "error": "pnpm type-check && pnpm lint",
     "diagnostics": "pnpm type-check && pnpm lint",
     "storybook": "storybook dev -p 6006",
@@ -31,6 +61,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.562.0",
+    "lucide-solid": "^0.562.0",
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {

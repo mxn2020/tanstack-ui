@@ -1,7 +1,7 @@
-// packages/ui/src/components/Tabs.tsx
+// packages/ui/src/react/components/Tabs.tsx
 
 import { createContext, useContext, useState, useCallback, ReactNode, memo } from 'react';
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils';
+import { cn } from '../lib/utils';
 
 // Context for managing tab state
 interface TabsContextValue {

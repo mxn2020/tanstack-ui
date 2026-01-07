@@ -1,7 +1,7 @@
-// packages/ui/src/components/ScrollArea.tsx
+// packages/ui/src/react/components/ScrollArea.tsx
 
 import { forwardRef, memo, ReactNode, useRef, useEffect, useState, useCallback } from 'react';
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils';
+import { cn } from '../lib/utils';
 
 interface ScrollAreaProps {
   children: ReactNode;

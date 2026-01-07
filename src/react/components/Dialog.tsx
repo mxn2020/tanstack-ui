@@ -1,8 +1,8 @@
-// packages/ui/src/components/Dialog.tsx
+// packages/ui/src/react/components/Dialog.tsx
 
 import { createContext, useContext, useState, useCallback, useEffect, useRef, forwardRef, ReactNode, memo } from 'react';
 import { createPortal } from 'react-dom';
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils';
+import { cn } from '../lib/utils';
 import { X } from 'lucide-react';
 
 // Context for managing dialog state

@@ -1,9 +1,9 @@
-// packages/ui/src/components/Chip.tsx
+// packages/ui/src/react/components/Chip.tsx
 
 import { forwardRef, memo, useCallback } from 'react'
 import type { HTMLAttributes, ElementRef, ReactNode, MouseEvent } from 'react'
 import { X } from 'lucide-react'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
+import { cn } from '../lib/utils'
 
 type ChipVariant = 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'default'
 type ChipSize = 'sm' | 'md' | 'lg'

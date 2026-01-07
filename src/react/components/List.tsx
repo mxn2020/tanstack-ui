@@ -1,8 +1,8 @@
-// packages/ui/src/components/List.tsx
+// packages/ui/src/react/components/List.tsx
 
 import { forwardRef, ReactNode, memo } from 'react';
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils';
-import type { DataTableColumn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/types';
+import { cn } from '../lib/utils';
+import type { DataTableColumn } from '../lib/types';
 
 // List Item component
 interface ListItemProps extends React.HTMLAttributes<HTMLDivElement> {

@@ -1,7 +1,7 @@
-// packages/ui/src/components/Loading.tsx
+// packages/ui/src/react/components/Loading.tsx
 import { forwardRef, memo } from 'react'
 import type { HTMLAttributes, ElementRef } from 'react'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
+import { cn } from '../lib/utils'
 
 interface LoadingProps extends HTMLAttributes<HTMLDivElement> {
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'

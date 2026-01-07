@@ -1,28 +1,16 @@
 // packages/ui/src/solid/components/Button.tsx
 
-import { Show, splitProps, type JSX, type Component } from 'solid-js'
+import { Component, JSX, splitProps, Show, createMemo } from 'solid-js'
 import { cn } from '../lib/utils'
-
-export type ButtonVariant =
-  | 'default'
-  | 'primary'
-  | 'secondary'
-  | 'success'
-  | 'warning'
-  | 'error'
-  | 'danger'
-  | 'destructive'
-  | 'ghost'
-  | 'outline'
-  | 'link'
-
-export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'icon' | 'default'
+import type { ButtonVariant, ButtonSize } from '../lib/types'
 
 export interface ButtonProps extends JSX.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant
   size?: ButtonSize
   loading?: boolean
   icon?: JSX.Element
+  children?: JSX.Element
+  ref?: HTMLButtonElement | ((el: HTMLButtonElement) => void)
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
@@ -78,35 +66,56 @@ export const Button: Component<ButtonProps> = (props) => {
     'disabled',
     'icon',
     'class',
-    'className',
     'children',
+    'onClick',
+    'ref',
   ])
 
   const isDisabled = () => local.disabled || local.loading
   const hasText = () => !!local.children
   const showIcon = () => !local.loading && !!local.icon
 
-  const buttonClasses = () =>
+  const buttonClasses = createMemo(() =>
     cn(
       [
         'inline-flex items-center justify-center rounded-lg border font-medium transition-colors',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
-        'disabled:pointer-events-none disabled:opacity-50',
-        variantClasses[local.variant || 'primary'],
-        sizeClasses[local.size || 'md'],
-        local.class || local.className,
-      ]
+        'focus-visible:ring-offset-surface',
+        'disabled:opacity-50',
+        isDisabled() ? 'cursor-not-allowed' : 'cursor-pointer',
+        variantClasses[local.variant ?? 'primary'],
+        sizeClasses[local.size ?? 'md'],
+      ].join(' '),
+      local.class
     )
+  )
 
   return (
-    <button class={buttonClasses()} disabled={isDisabled()} {...others}>
+    <button
+      ref={local.ref}
+      disabled={isDisabled()}
+      onClick={local.onClick}
+      class={buttonClasses()}
+      {...others}
+    >
       <Show when={local.loading}>
         <LoadingSpinner />
       </Show>
+
       <Show when={showIcon()}>
-        <span class={hasText() ? 'mr-2' : ''}>{local.icon}</span>
+        <span
+          class={cn(
+            'inline-flex items-center justify-center shrink-0 [&>svg]:h-5 [&>svg]:w-5',
+            hasText() ? 'mr-2' : ''
+          )}
+        >
+          {local.icon}
+        </span>
       </Show>
-      {local.children}
+
+      <Show when={hasText()}>
+        <span class="inline-flex items-center">{local.children}</span>
+      </Show>
     </button>
   )
 }

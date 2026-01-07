@@ -1,9 +1,9 @@
-// packages/ui/src/components/Table.tsx
+// packages/ui/src/react/components/Table.tsx
 
 import { forwardRef, ReactNode, memo } from 'react';
 import type { ThHTMLAttributes } from 'react';
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils';
-import type { DataTableOptions } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/types';
+import { cn } from '../lib/utils';
+import type { DataTableOptions } from '../lib/types';
 
 // Root Table component
 interface TableProps {

@@ -1,4 +1,4 @@
-// packages/ui/src/components/AlertDialog.tsx
+// packages/ui/src/react/components/AlertDialog.tsx
 
 import {
   createContext,
@@ -14,7 +14,7 @@ import {
 } from 'react'
 import type { ReactElement, ReactNode } from 'react'
 import { createPortal } from 'react-dom'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
+import { cn } from '../lib/utils'
 
 interface AlertDialogContextValue {
   open: boolean

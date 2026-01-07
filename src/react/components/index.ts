@@ -1,40 +1,40 @@
 // src/components/ui/index.ts
 
 // Export shared types
-export type * from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/types'
+export type * from '../lib/types'
 
 // Basic form components
-export { Button, type ButtonProps } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Button'
-export { Input } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Input'
-export { Textarea } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Textarea'
-export { Checkbox } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Checkbox'
-export { Switch } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Switch'
-export { RadioGroup, RadioGroupItem } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/RadioGroup'
+export { Button, type ButtonProps } from './Button'
+export { Input } from './Input'
+export { Textarea } from './Textarea'
+export { Checkbox } from './Checkbox'
+export { Switch } from './Switch'
+export { RadioGroup, RadioGroupItem } from './RadioGroup'
 export { LinkButton } from '../tanstack-components/LinkButton' // Requires @tanstack/react-router
 
 // Display components
-export { Badge, StatusBadge, PriorityBadge } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Badge'
-export { Chip } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Chip'
-export { Loading, LoadingSkeleton } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Loading'
-export { Tooltip, TooltipProvider, TooltipTrigger, TooltipContent } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Tooltip'
-export { CostDisplay, SimpleCostDisplay } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/CostDisplay'
+export { Badge, StatusBadge, PriorityBadge } from './Badge'
+export { Chip } from './Chip'
+export { Loading, LoadingSkeleton } from './Loading'
+export { Tooltip, TooltipProvider, TooltipTrigger, TooltipContent } from './Tooltip'
+export { CostDisplay, SimpleCostDisplay } from './CostDisplay'
 
 // Layout components
-export { Card, CardHeader, CardContent, CardFooter, CardTitle, CardDescription } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Card'
-export { Section, SectionHeader, SectionTitle, SectionDescription, SectionContent, CompoundSection } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Section'
-export { Table, TableHeader, TableBody, TableFooter, TableRow, TableHead, TableCell, TableCaption, DataTable } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Table'
-export { ListItem, ListContainer, DataList, CompactListView } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/List'
-export { ViewSwitcher, type ViewMode } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/ViewSwitcher'
-export { Separator } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Separator'
-export { Breadcrumb, useProjectBreadcrumbs, type BreadcrumbItem, type BreadcrumbProps } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Breadcrumb'
+export { Card, CardHeader, CardContent, CardFooter, CardTitle, CardDescription } from './Card'
+export { Section, SectionHeader, SectionTitle, SectionDescription, SectionContent, CompoundSection } from './Section'
+export { Table, TableHeader, TableBody, TableFooter, TableRow, TableHead, TableCell, TableCaption, DataTable } from './Table'
+export { ListItem, ListContainer, DataList, CompactListView } from './List'
+export { ViewSwitcher, type ViewMode } from './ViewSwitcher'
+export { Separator } from './Separator'
+export { Breadcrumb, useProjectBreadcrumbs, type BreadcrumbItem, type BreadcrumbProps } from './Breadcrumb'
 
 // Interactive components
-export { Modal, ModalHeader, ModalBody, ModalFooter } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Modal'
-export { Tabs, TabsList, TabsTrigger, TabsContent } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Tabs'
-export { Select, SelectTrigger, SelectValue, SelectContent, SelectItem, SelectLabel, SelectSeparator, SimpleSelect } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Select'
-export { Progress } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Progress'
-export { Slider } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Slider'
-export { ToggleGroup, ToggleGroupItem } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/ToggleGroup'
+export { Modal, ModalHeader, ModalBody, ModalFooter } from './Modal'
+export { Tabs, TabsList, TabsTrigger, TabsContent } from './Tabs'
+export { Select, SelectTrigger, SelectValue, SelectContent, SelectItem, SelectLabel, SelectSeparator, SimpleSelect } from './Select'
+export { Progress } from './Progress'
+export { Slider } from './Slider'
+export { ToggleGroup, ToggleGroupItem } from './ToggleGroup'
 
 // Compound components with context
 export { 
@@ -46,7 +46,7 @@ export {
   DialogDescription, 
   DialogFooter, 
   DialogClose 
-} from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Dialog'
+} from './Dialog'
 
 export { 
   DropdownMenu, 
@@ -56,11 +56,11 @@ export {
   DropdownMenuSeparator, 
   DropdownMenuLabel, 
   DropdownMenuCheckboxItem 
-} from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/DropdownMenu'
+} from './DropdownMenu'
 
-export { Collapsible, CollapsibleTrigger, CollapsibleContent } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Collapsible'
+export { Collapsible, CollapsibleTrigger, CollapsibleContent } from './Collapsible'
 
-export { Alert, AlertTitle, AlertDescription, AlertIcon, CompoundAlert } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Alert'
+export { Alert, AlertTitle, AlertDescription, AlertIcon, CompoundAlert } from './Alert'
 
 export { 
   AlertDialog, 
@@ -72,18 +72,18 @@ export {
   AlertDialogFooter, 
   AlertDialogAction, 
   AlertDialogCancel 
-} from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/AlertDialog'
+} from './AlertDialog'
 
 export {
   Popover,
   PopoverTrigger,
   PopoverContent,
   PopoverClose
-} from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Popover'
+} from './Popover'
 
 // Utility components
-export { Avatar, AvatarImage, AvatarFallback, CompoundAvatar, getAvatarInitials } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Avatar'
-export { Label } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Label'
+export { Avatar, AvatarImage, AvatarFallback, CompoundAvatar, getAvatarInitials } from './Avatar'
+export { Label } from './Label'
 export {
   Skeleton,
   SkeletonText,
@@ -94,17 +94,17 @@ export {
   SkeletonForm,
   SkeletonMetricCard,
   SkeletonList
-} from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Skeleton'
-export { Calendar } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Calendar'
-export { DatePicker } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/DatePicker'
-export { DateTimePicker } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/DateTimePicker'
-export { CalendarInput } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/CalendarInput'
+} from './Skeleton'
+export { Calendar } from './Calendar'
+export { DatePicker } from './DatePicker'
+export { DateTimePicker } from './DateTimePicker'
+export { CalendarInput } from './CalendarInput'
 
 // Empty state components
-export { EmptyState, type EmptyStateProps, type EmptyStateVariant, NoSearchResults, NoFilterResults } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/EmptyState'
+export { EmptyState, type EmptyStateProps, type EmptyStateVariant, NoSearchResults, NoFilterResults } from './EmptyState'
 
 // Modal components
-export { ScrollArea } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/ScrollArea'
+export { ScrollArea } from './ScrollArea'
 
 
 /* Ideas for additional components

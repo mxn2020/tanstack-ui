@@ -1,4 +1,4 @@
-// packages/ui/src/components/Select.tsx
+// packages/ui/src/react/components/Select.tsx
 
 import React, {
   createContext,
@@ -16,9 +16,9 @@ import React, {
   type ReactNode,
 } from 'react'
 import { createPortal } from 'react-dom'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
+import { cn } from '../lib/utils'
 import { ChevronDown, Check, ChevronUp } from 'lucide-react'
-import { clamp, composeEventHandlers, getPortalContainer, mergeRefs, setRef } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/helpers'
+import { clamp, composeEventHandlers, getPortalContainer, mergeRefs, setRef } from '../lib/helpers'
 
 type Side = 'bottom' | 'top'
 type Align = 'start' | 'center' | 'end'

@@ -1,4 +1,4 @@
-// packages/ui/src/components/LoadingSpinner.tsx
+// packages/ui/src/react/components/LoadingSpinner.tsx
 
 interface LoadingSpinnerProps {
   /**

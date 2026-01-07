@@ -1,4 +1,4 @@
-// packages/ui/src/components/CalendarInput.tsx
+// packages/ui/src/react/components/CalendarInput.tsx
 
 import {
   useMemo,
@@ -10,7 +10,7 @@ import {
   useRef,
 } from 'react'
 import type { ElementRef } from 'react'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
+import { cn } from '../lib/utils'
 import {
   CalendarClock,
   CalendarDays,
@@ -19,10 +19,10 @@ import {
   Zap,
   X,
 } from 'lucide-react'
-import { Popover, PopoverContent, PopoverTrigger } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Popover'
-import { Calendar } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Calendar'
-import type { FormComponentProps, InputSize } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/types'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/components/Select'
+import { Popover, PopoverContent, PopoverTrigger } from './Popover'
+import { Calendar } from './Calendar'
+import type { FormComponentProps, InputSize } from '../lib/types'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './Select'
 
 type PickerMode = 'date' | 'time' | 'datetime'
 

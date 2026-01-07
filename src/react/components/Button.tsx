@@ -1,9 +1,9 @@
-// packages/ui/src/components/Button.tsx
+// packages/ui/src/react/components/Button.tsx
 
 import React, { forwardRef, memo, useCallback } from 'react'
 import type { ButtonHTMLAttributes, ElementRef, ReactNode } from 'react'
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils'
-import type { ButtonVariant, ButtonSize } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/types'
+import { cn } from '../lib/utils'
+import type { ButtonVariant, ButtonSize } from '../lib/types'
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant
@@ -109,7 +109,7 @@ export const Button = memo(
 
       if (asChild) {
         if (!React.isValidElement(children)) {
-          if (import.meta.env.DEV) console.warn('<Button asChild> expects a single valid React element child.')
+          console.warn('<Button asChild> expects a single valid React element child.')
           return null
         }
 

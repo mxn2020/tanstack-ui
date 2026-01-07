@@ -1,7 +1,7 @@
-// packages/ui/src/components/ViewSwitcher.tsx
+// packages/ui/src/react/components/ViewSwitcher.tsx
 
 import { memo } from 'react';
-import { cn } from '.pnpm/@tanstack-app+ui@file+..+ui_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/@tanstack-app/ui/lib/utils';
+import { cn } from '../lib/utils';
 
 export type ViewMode = 'grid' | 'table' | 'list';
 
