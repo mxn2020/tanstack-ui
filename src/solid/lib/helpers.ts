@@ -6,8 +6,9 @@ export function mergeRefs<T>(...refs: Array<T | ((el: T) => void) | undefined>) 
       if (!ref) continue
       if (typeof ref === 'function') {
         (ref as (el: T) => void)(node)
-      } else {
-        (ref as any) = node
+      } else if (typeof ref === 'object' && ref !== null) {
+        // Handle ref objects (like those from signals)
+        (ref as any).current = node
       }
     }
   }
