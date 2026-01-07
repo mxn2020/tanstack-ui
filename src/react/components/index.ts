@@ -1,4 +1,4 @@
-// src/components/ui/index.ts
+// src/react/components/index.ts
 
 // Export shared types
 export type * from '../lib/types'

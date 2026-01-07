@@ -12,3 +12,5 @@ export * from './hooks'
 
 // Re-export utilities
 export * from './lib/utils'
+
+export * from './lib/types'
